@@ -2,10 +2,6 @@ import { users } from "../data/users.js";
 import Validator from "../crossUseStructures/validators/userValidator.js";
 
 export default class userService {
-  constructor(loggerService) {
-    this.loggerService = loggerService;
-  }
-
   //Belirtilmiş olan id'ye sahip user getirildi
   getUser(id) {
     return users.find((user) => user.id === id);
