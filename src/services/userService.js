@@ -1,7 +1,7 @@
 import { users } from "../data/users.js";
 import Validator from "../crossUseStructures/validators/userValidator.js";
 
-export default class userService {
+class userService {
   //Belirtilmiş olan id'ye sahip user getirildi
   getUser(id) {
     return users.find((user) => user.id === id);
@@ -32,3 +32,4 @@ export default class userService {
     users.splice(users.indexOf(user), 1);
   }
 }
+export default new userService();

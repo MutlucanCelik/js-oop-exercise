@@ -1,19 +1,18 @@
 import User from "../models/User.js";
-import userService from "../services/userService.js";
+import UserService from "../services/userService.js";
 
 const user1 = new User(11, "Veli", "Kaya", "Ankara", 18);
-let uService = new userService();
 
-console.log(uService.getUser(1));
+console.log(UserService.getUser(1));
 
-uService.list();
+UserService.list();
 
-uService.add(user1);
+UserService.add(user1);
 
-uService.list();
+UserService.list();
 
-uService.remove(5);
+UserService.remove(5);
 
 console.log("--------------------");
 
-uService.list();
+UserService.list();
