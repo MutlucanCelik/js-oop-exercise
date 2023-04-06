@@ -7,12 +7,14 @@ console.log(UserService.getUser(1));
 
 UserService.list();
 
+console.log("--------------------------------------");
+
 UserService.add(user1);
 
 UserService.list();
 
-UserService.remove(5);
+console.log("--------------------------------------");
 
-console.log("--------------------");
+UserService.remove(5);
 
 UserService.list();
